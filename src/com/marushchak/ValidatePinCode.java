@@ -2,7 +2,7 @@ package com.marushchak;
 
 public class ValidatePinCode {
     public static void main(String[] args) {
-        System.out.println(validatePin("1021"));
+        System.out.println(validatePin("123021"));
     }
     public static boolean validatePin(String pin) {
         // Your code here...
