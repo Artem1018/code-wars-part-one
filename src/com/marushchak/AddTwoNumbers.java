@@ -41,10 +41,5 @@ public static double calculiator(int a, int b, int key){
         default:
             return (double)a / b;
     }
-
-
-
-
-
 }
 }
