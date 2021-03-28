@@ -42,7 +42,7 @@ public class GreedisGood {
             }
             check++;
         }
-        for ()
+
         return 0;
     }
 
