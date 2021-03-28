@@ -1,7 +1,5 @@
 package com.marushchak;
 
-import java.util.Arrays;
-
 public class GreedisGood {
 
     public static void main(String[] args) {
@@ -32,33 +30,21 @@ public class GreedisGood {
         return score;
     }
 
-    public static int findThreeNumber(int[] num){
-        int counter = 0;
-        int check = 0;
-        while (check != 5){
-            for (int i = 0; i < num.length; i++) {
-                if (num[check] == num[i]);
-                counter++;
-            }
-            check++;
-        }
 
+
+    public static int findThreeNumber(int[] num){
+        int counter = 1;
+        for (int i = 1; i < num.length; i++) {
+            if (num[i-1] == num[i])
+                counter++;
+            else
+                counter = 1;
+
+            if (counter==3)
+                return num[i];
+        }
         return 0;
     }
-
-//    public static int findThreeNumber(int[] num){
-//        int counter = 1;
-//        for (int i = 1; i < num.length; i++) {
-//            if (num[i-1] == num[i])
-//                counter++;
-//            else
-//                counter = 1;
-//
-//            if (counter==3)
-//                return num[i];
-//        }
-//        return 0;
-//    }
     public static int[] deleteThreeNumber(int[] num){
         int counter = 1;
         int start = 0;
