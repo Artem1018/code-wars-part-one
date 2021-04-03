@@ -9,4 +9,5 @@ public class BuildAPileOfCubes {
             while (mm < m) mm += ++n * n * n;
             return mm == m ? n : -1;
         }
+        
 }
