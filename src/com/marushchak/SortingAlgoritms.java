@@ -7,7 +7,6 @@ public class SortingAlgoritms {
         System.out.println("");
         print(bubbleSort(arr));
     }
-
     public static int[] bubbleSort(int[] arr){
         int n = arr.length;
         for (int i = 0; i < n - 1; i++)
